@@ -11,6 +11,9 @@
 #ifndef SCINTILLACALL_H
 #define SCINTILLACALL_H
 
+#include <string>
+#include <string_view>
+
 namespace Scintilla {
 
 enum class Message;	// Declare in case ScintillaMessages.h not included

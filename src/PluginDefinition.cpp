@@ -60,6 +60,7 @@ void commandMenuInit()
     //            );
     setCommand(0, TEXT("Hello LogAnalyzer"), hello, NULL, false);
     setCommand(1, TEXT("Hello LogAnalyzer(with dialog)"), helloDlg, NULL, false);
+    setCommand(2, TEXT("ScintillaTest"), tillaTest, NULL, false);
 }
 
 //
@@ -113,4 +114,17 @@ void hello()
 void helloDlg()
 {
     ::MessageBox(NULL, TEXT("Hello, Notepad++!"), TEXT("Notepad++ Plugin Template"), MB_OK);
+}
+
+using namespace std;
+#include "include/ScintillaTypes.h"
+#include "include/ScintillaCall.h"
+void tillaTest()
+{
+    /*
+    ScintillaCall call;
+    call.SetFnPtr((intptr_t)hScintilla);
+    auto pos = call.GetCurrentPos();
+    */
+    OutputDebugString((LPCWSTR)"tillaTest");
 }
